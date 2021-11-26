@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(224, 191, 255);
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    color:rgb(0, 0, 0);
+}
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 60%;
+}
+th, td {
+    text-align: center;
+    padding: 4px;
+}
+th {
+    background: rgb(205, 154, 253);
+    border: 1px solid rgb(219, 141, 255);
+    height: 32px;
+}
+td {
+    border-top: 1px solid rgb(219, 141, 255);
+    background: #ddadfd;
+}
+table tr th a{
+    font-size: 8pt;
+    color:rgb(0, 0, 0);
+}
+table tr th a:hover {
+    font-size: 9pt;
+}
+td.editor {
+    border-right: 1px solid rgb(219, 141, 255);
+}
+.field {
+    width:200px;
+}
+input[type=submit] {
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background: #8f39ff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background: #a21ce0;
+    cursor: pointer;
+}
+a { 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.upper {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+.btn {
+    font-style: 20px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    background: #8f39ff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-size: 100%;
+}
+.btn:hover {
+    background: #a21ce0;
+}
+.btn_main {
+    width: 100px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #8f39ff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn_main:hover {
+    background: #a21ce0;
+}
+.btn_save {
+    margin-left: 54px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
