@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список альбомов</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <center>
+    <h3>Список любимых альбомов</h3>
+    <br>
+    <a href="/create" class="btn">Добавить альбом</a>
+    <a href="/restore" class="btn">Восстановить список</a>
+    <a href="/clear" class="btn">Очистить список</a>
+    <table>
+        <tr>
+            <th>Редактор</th>
+            <th>Исполнитель&nbsp;<a href="/sort/author.ASC">▲</a><a href="/sort/author.DESC">▼</a></th>
+            <th>Название</th>
+            <th>Год релиза&nbsp;<a href="/sort/releaseYear.ASC">▲</a><a href="/sort/releaseYear.DESC">▼</a></th>
+            <th>Количество песен</th>
+            <th>Оценка&nbsp;<a href="/sort/rating.ASC">▲</a><a href="/sort/rating.DESC">▼</a></th>
+        </tr>
+        {{#each albums}}
+            <tr>
+                <td width=180 class="editor">
+                    <form action="/edit/{{this.id}}" method="GET" style="display:inline;">
+                        <input type="submit" value="Изменить" />
+                    </form>
+                    <form action="/delete/{{this.id}}" method="POST" style="display:inline;">
+                        <input type="submit" value="Удалить" />
+                    </form>
+                </td>
+                <td>{{this.author}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.releaseYear}}</td>
+                <td>{{this.songsCount}}</td>
+                <td>{{this.rating}}</td>
+            </tr>
+        {{/each}}
+    </table>
+    </center>
+</body>
+<html>

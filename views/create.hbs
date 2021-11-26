@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавить альбом</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h1>Добавить альбом</h1>
+            <form method="POST">        
+                <label>Исполнитель</label><br>
+                <input name="author" class="field" /><br><br>
+
+                <label>Название</label><br>
+                <input name="name" class="field" /><br><br>
+                
+                <label>Год релиза</label><br>
+                <input name="releaseYear" min="1800" max="2050" step="1" type="number" class="field" /><br><br>
+
+                <label>Количество песен</label><br>
+                <input name="songsCount" type="number" class="field" min="1" max="101" step="1" /><br><br>
+                
+                <label>Оценка</label><br>
+                <input name="rating" type="number" class="field" min="1" max="10" step="1" /><br><br>
+
+                <input class="btn_main btn_save" type="submit" value="Сохранить" />
+            </form>
+            <br>
+            <a class="btn_main" href="/">На главную</a>
+        </div>
+    </div>
+</body>
+<html>

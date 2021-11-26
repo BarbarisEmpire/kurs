@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изменить данные</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h1>Изменить данные</h1>
+            <form action="/edit" method="POST">
+                <input type="hidden" name="id" value="{{albums.id}}" />
+                
+                <label>Исполнитель</label><br>
+                <input name="author" class="field" value="{{albums.author}}" /><br><br>
+
+                <label>Название</label><br>
+                <input name="name" class="field" value="{{albums.name}}" /><br><br>
+                
+                <label>Год релиза</label><br>
+                <input name="releaseYear" type="number" class="field" value="{{albums.releaseYear}}" /><br><br>
+
+                <label>Количество песен</label><br>
+                <input name="songsCount" type="number" class="field" min="1" max="101" step="1" value="{{albums.songsCount}}" /><br><br>
+
+                <label>Оценка</label><br>
+                <input name="rating" type="number" class="field" min="1" max="10" step="1" value="{{albums.rating}}" /><br><br>
+                
+                <input class="btn_main btn_save" type="submit" value="Сохранить" />
+            </form>
+            <br>
+            <a class="btn_main" href="/">На главную</a>
+        </div>
+    </div>
+</body>
+<html>
